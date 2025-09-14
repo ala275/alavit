@@ -1,0 +1,94 @@
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="email"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contactus {
+  width: 100%;
+  height: 55vh;
+  background: url("https://firebasestorage.googleapis.com/v0/b/website-e921e.appspot.com/o/cover.jpg?alt=media&token=b9051e5a-239d-485b-84c1-9d37795a48ff")
+    top center;
+  background-size: cover;
+  position: relative;
+}
+
+#contactus:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#contactus .container {
+  position: relative;
+  padding-top: 65px;
+  text-align: center;
+}
+
+#contactus h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+#contactus h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 2px 0 0 0;
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  #contactus {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #contactus {
+    height: auto;
+  }
+  #contactus h1 {
+    font-size: 27px;
+    margin-top: 0px;
+  }
+  #contactus h2 {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+}
